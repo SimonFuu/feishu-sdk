@@ -7,7 +7,6 @@ composer require hyperfx/feishu
 ```
 
 
-
 ```
 use Hyperf\Di\Annotation\Inject;
 use HyperfX\Feishu\Application;
@@ -20,10 +19,9 @@ class FeishuController
    */
   protected $feishuApplication;
   
-  
   public function getUser($code)
   {
-      $user = $this->feishuApplication->users->default->getUserInfo($request->input('code'));
+      $user = $this->feishuApplication->users->default->getUserInfo($code);
   }
   
   public funtion getDepartmentList()

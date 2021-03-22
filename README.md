@@ -16,7 +16,7 @@ class FeishuController
 {
   /**
    * @Inject
-   * @var FeishuApplication
+   * @var Application
    */
   protected $feishuApplication;
   
